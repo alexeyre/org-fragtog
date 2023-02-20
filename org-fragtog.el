@@ -245,8 +245,6 @@ If RENEW is non-nil, renew the fragment at point."
 
   ;; There may be nothing at the adjusted point
   (when frag
-    (org-clear-latex-preview (org-fragtog--frag-start frag)
-                             (org-fragtog--frag-end frag))
     (org-fragtog--set-point-after-disable-frag frag)))
 
 (provide 'org-fragtog)
